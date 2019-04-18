@@ -808,6 +808,7 @@ html.is-mobile #preloader-text-enter {
     position: relative;
     padding: 10%;
     text-align: center;
+    transition: .8s all;
 }
 
 .right-part {
