@@ -11,11 +11,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/form.css">
     </head>
     <body>
         <div class="container-fluid contacts-form">
           <div class="row">
-              <div class="col  d-flex justify-content-center">
+              <div class="col d-flex justify-content-center">
                 <div class="left-part">
                     <div class="circle-animation">
                         <canvas id="canvas"></canvas>
@@ -46,16 +47,43 @@
                                 <span style="color: green;">Email:</span> info@gmail.com
                             </li>
                             <li class="mt-5">
-                                <span style="color: green; padding:15px; border: 2px solid green;">GET IN TOUCH</span>
+                              <button id="toggle-map">
+                                  <span style="color: green; padding: 5px;">LOCATION</span>
+                              </button>
                             </li>
                             <li class="mt-5">
-                                <span style="color: green; padding:15px; border: 2px solid green;">LOCATION</span>
+                              <button id="toggle-form">
+                                  <span style="color: green; padding: 5px">GET IN TOUCH</span
+                              </button>
                             </li>
                           </ul>
                     </div>
                 </div>
                 <div class="right-part">
-                    <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="" class="img-fluid">
+
+                    <div class="target-map">
+                        <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="" class="img-fluid">
+                    </div>
+
+
+                    <div class="target-form">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
                 
               </div>
@@ -71,5 +99,6 @@
       <!-- Bootstrap -->
       <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="js/main.js"></script>
 </body>
 </html>
