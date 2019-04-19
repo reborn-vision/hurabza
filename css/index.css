@@ -73,37 +73,6 @@ body {
 ::-moz-selection {
     background-color: transparent;
 }
-/* 
-#main {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 0;
-    text-align: center;
-} */
-
-/* 
-#header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0;
-    pointer-events: none;
-
-    z-index: 20
-} */
-/* 
-#header-about {
-    position: absolute;
-    width: 100%;
-    bottom: 100%;
-    padding: 0 40px;
-    margin: 0 0;
-    font-size: 42px;
-    line-height: 72px;
-} */
 
 html.is-mobile #header-about {
     font-size: 24px;
@@ -129,7 +98,7 @@ html.is-mobile #header-about {
     opacity: 0;
 }
 
-html.is-mobile #header-logo-bg {
+/* html.is-mobile #header-logo-bg {
     display: none;
 }
 
@@ -158,7 +127,7 @@ html.is-mobile #header-logo-bg {
     z-index: 15;
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 html.is-mobile #menu-btn {
     left: 0;
@@ -724,37 +693,6 @@ html.is-mobile #preloader-text-enter {
     display: none;
 }
 
-
-#sound-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right:  50px;
-    bottom: 32px;
-    z-index: 40;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-}
-
-
-#sound-btn  canvas {
-    display: block;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-
-    opacity: 0.4;
-    transition: opacity 0.25s linear;
-}
-
-#sound-btn:hover  canvas {
-    opacity: 1
-}
-
-
-
 #instruction {
     position: absolute;
     left: 0;
@@ -809,18 +747,45 @@ html.is-mobile #preloader-text-enter {
     padding: 10%;
     text-align: center;
     transition: .8s all;
+    display: flex;
+    justify-content: center;
 }
 
 .right-part {
     /* border: 4px solid lightcoral;  */
     display: inline-block;
+    position: absolute;
+    right: 10%;
 }
 
 .target-map, .target-form {
+    /* position: absolute; */
     display: none;
+    background: transparent;
 }
 
 form {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     padding: 5%;
+}
+.map-responsive {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#toggle-map, #toggle-form {
+    outline: none;
+    border: 1px solid green;
+    background: none;
+    padding: 10px 20px;
+    color: #fff;
+    transition: .6s all;
+}
+
+#toggle-form:hover {
+    background: green;
+}
+
+#toggle-map:hover {
+    background: green;
 }

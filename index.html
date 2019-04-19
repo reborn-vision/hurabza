@@ -16,7 +16,7 @@
     <body>
         <div class="container-fluid contacts-form">
           <div class="row">
-              <div class="col d-flex justify-content-center">
+              <div class="col d-flex justify-content-center h-100">
                 <div class="left-part">
                     <div class="circle-animation">
                         <canvas id="canvas"></canvas>
@@ -48,40 +48,32 @@
                             </li>
                             <li class="mt-5">
                               <button id="toggle-map">
-                                  <span style="color: green; padding: 5px;">LOCATION</span>
+                                  <span>LOCATION</span>
                               </button>
                             </li>
                             <li class="mt-5">
                               <button id="toggle-form">
-                                  <span style="color: green; padding: 5px">GET IN TOUCH</span
+                                  <span>GET IN TOUCH</span
                               </button>
                             </li>
                           </ul>
                     </div>
                 </div>
-                <div class="right-part">
+                <div class="right-part align-self-center">
 
                     <div class="target-map">
-                        <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="" class="img-fluid">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7639168727!2d36.82513011480197!3d55.5807480807697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C+Russia!5e0!3m2!1sen!2sua!4v1555591689206!5m2!1sen!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
 
 
                     <div class="target-form">
-                        <form>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                        <form id="form" class="topBefore">
+                            <input id="name" type="text" placeholder="NAME">
+                            <input id="email" type="text" placeholder="E-MAIL">
+                            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                            <input id="submit" type="submit" value="GO!">
                         </form>
                     </div>
                 </div>
@@ -92,6 +84,7 @@
                 </div> -->
           </div>
         </div>
+
 
       <!-- Three.js -->
         <script src="js/three.min.js"></script>
