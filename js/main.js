@@ -2,11 +2,11 @@ $(document).ready(function() {
 
     // toggle map visibility
     $("#toggle-map").click(function(){
-        $(".target-map").toggle( 'slide');
+        $(".target-map").toggle('left');
     });
     // toggle contact form visibility
     $("#toggle-form").click(function(){
-        $(".target-form").toggle( 'slide');
+        $(".target-form").toggle('left');
     });
 
     // hide one on click 

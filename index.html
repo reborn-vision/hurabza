@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta charset="utf-8">
-        <title>Circle Animations</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
-       
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/form.css">
-    </head>
-    <body>
-        <div class="container-fluid contacts-form">
-          <div class="row">
-              <div class="col d-flex justify-content-center h-100">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <title>Circle Animations</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="container-fluid contacts-form">
+        <div class="row">
+            <div class="col d-flex justify-content-center h-100">
                 <div class="left-part">
                     <div class="circle-animation">
                         <canvas id="canvas"></canvas>
                         <div id="menu-btn"></div>
                         <div id="main">
-                          <div id="all"></div>
-                          <div id="nodes"><div id="nodes-container"></div><svg width="9" height="5" id="nodes-arrow" data-name="nodes-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.02 5.04"><polygon points="4.51 5.04 0 0.53 0.53 0 4.51 3.98 8.48 0 9.02 0.53 4.51 5.04" style="fill:#fff"/></svg></div>
-                          <div id="story"><div id="story-pole"><div id="story-pole-line"></div><div id="story-pole-node"></div></div></div>
+                            <div id="all"></div>
+                            <div id="nodes">
+                                <div id="nodes-container"></div><svg width="9" height="5" id="nodes-arrow" data-name="nodes-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.02 5.04"><polygon points="4.51 5.04 0 0.53 0.53 0 4.51 3.98 8.48 0 9.02 0.53 4.51 5.04" style="fill:#fff"/></svg></div>
+                            <div id="story">
+                                <div id="story-pole">
+                                    <div id="story-pole-line"></div>
+                                    <div id="story-pole-node"></div>
+                                </div>
+                            </div>
                         </div>
                         <div id="preloader-text" class="cache">
-                          <div id="preloader-text-title"></div>
-                          <div id="preloader-text-author"></div>
-                          <div id="preloader-text-enter"></div>
+                            <div id="preloader-text-title"></div>
+                            <div id="preloader-text-author"></div>
+                            <div id="preloader-text-enter"></div>
                         </div>
                     </div>
-                    
+
                     <div class="contact-info">
+                        <a href="main.html">home</a>
                         <p>Main/Our history</p>
                         <h2>Контакты</h2>
-                          <ul class="list-unstyled text-center">
+                        <ul class="list-unstyled text-center">
                             <li>
                                 Moscow, Kirova 1111
                             </li>
@@ -47,23 +57,24 @@
                                 <span style="color: green;">Email:</span> info@gmail.com
                             </li>
                             <li class="mt-5">
-                              <button id="toggle-map">
+                                <button id="toggle-map">
                                   <span>LOCATION</span>
                               </button>
                             </li>
                             <li class="mt-5">
-                              <button id="toggle-form">
+                                <button id="toggle-form">
                                   <span>GET IN TOUCH</span
                               </button>
                             </li>
-                          </ul>
+                        </ul>
                     </div>
                 </div>
-                <div class="right-part align-self-center">
+                <div class="right-part align-self-center justify-content-center">
 
                     <div class="target-map">
                         <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7639168727!2d36.82513011480197!3d55.5807480807697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C+Russia!5e0!3m2!1sen!2sua!4v1555591689206!5m2!1sen!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7639168727!2d36.82513011480197!3d55.5807480807697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C+Russia!5e0!3m2!1sen!2sua!4v1555591689206!5m2!1sen!2sua"
+                                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -77,21 +88,22 @@
                         </form>
                     </div>
                 </div>
-                
-              </div>
-                <!-- <div class="col-lg-6 col-md-8 col-sm-8">
+
+            </div>
+            <!-- <div class="col-lg-6 col-md-8 col-sm-8">
                   <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="" class="img-fluid">
                 </div> -->
-          </div>
         </div>
+    </div>
 
 
-      <!-- Three.js -->
-        <script src="js/three.min.js"></script>
-        <script src="js/index.js"></script>
-      <!-- Bootstrap -->
-      <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="js/main.js"></script>
+    <!-- Three.js -->
+    <script src="js/three.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
