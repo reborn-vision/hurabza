@@ -149,11 +149,13 @@
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 
-				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
-				camera.position.z = 350;
+                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
+                // z position
+				camera.position.z = 450;
 
-				scene = new THREE.Scene();
-				scene.background = new THREE.Color( 0xffffff );
+                scene = new THREE.Scene();
+                // scene background color
+				scene.background = new THREE.Color( 0x292929 );
 				scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
 
 				renderer = new THREE.WebGLRenderer();
@@ -163,8 +165,9 @@
 
 				initComputeRenderer();
 
-				stats = new Stats();
-				container.appendChild( stats.dom );
+                stats = new Stats();
+                // disable FPS counter below
+				// container.appendChild( stats.dom );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
@@ -176,7 +179,10 @@
 
 
 
-				var gui = new dat.GUI();
+                var gui = new dat.GUI();
+                // hiding dat gui controls
+                dat.GUI.toggleHide();
+
 
 
 				var effectController = {
