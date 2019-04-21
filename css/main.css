@@ -1,16 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background: #0d993a;
+}
+
+*::selection {
+  background: #0d993a;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
-  /* background-color: #ffffff; */
-  margin: 0px;
-  overflow: hidden;
-  font-family: Monospace;
-  font-size: 13px;
-  text-align: center;
-  text-align: center;
-  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: #161616;
 }
 
 a {
-  color: #0078ff;
+  text-decoration: none;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #0d993a;
+}
+
+.heading {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.regular {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 #info {
