@@ -42,13 +42,15 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     background: $black;
+    color: $wt;
     // animation: fadeIn 2.2s ease-out;
     // visibility: hidden;
 }
 
+
 a {
     text-decoration: none;
-    transition: .6s all;
+    transition: .4s all;
     &:hover {
         text-decoration: none;
         cursor: pointer;
