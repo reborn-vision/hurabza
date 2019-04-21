@@ -111,6 +111,24 @@ canvas {
       }
   }
 
+  @media (max-width: 540px) {
+    .swiper_img {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    .swiper-slide {
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 1rem;
+            }
+        }
+    }
+  }
+
   .swiper_btn {
       background: none;
       outline: none;
@@ -175,6 +193,10 @@ canvas {
       background: none;
       font-size: 2.5rem;
       color: $green;
+
+      &:focus {
+          outline: none;
+      }
   }
 
   .swiper-button-prev {
@@ -184,3 +206,8 @@ canvas {
   .swiper-pagination-bullet {
     background: $green;
   }
+
+  .sampleClass {float:left;}
+@media only screen and (max-width: 800px){
+	.sampleClass {float:none;}
+}

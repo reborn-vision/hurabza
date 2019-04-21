@@ -78,6 +78,11 @@ a:hover {
   color: #6c757d;
 }
 
+header {
+  position: relative;
+  z-index: 5;
+}
+
 .overlay {
   display: none;
   width: 100%;
@@ -357,6 +362,18 @@ canvas {
   max-width: 350px;
 }
 
+@media (max-width: 540px) {
+  .swiper_img img {
+    max-width: 250px;
+  }
+  .swiper-slide ul {
+    list-style: none;
+  }
+  .swiper-slide ul li {
+    font-size: 1rem;
+  }
+}
+
 .swiper_btn {
   background: none;
   outline: none;
@@ -414,11 +431,25 @@ section {
   color: #0d993a;
 }
 
+.swiper-button-next:focus, .swiper-button-prev:focus {
+  outline: none;
+}
+
 .swiper-button-prev {
   left: -15px;
 }
 
 .swiper-pagination-bullet {
   background: #0d993a;
+}
+
+.sampleClass {
+  float: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .sampleClass {
+    float: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
