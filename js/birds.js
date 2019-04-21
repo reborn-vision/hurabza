@@ -155,7 +155,7 @@
 
                 scene = new THREE.Scene();
                 // scene background color
-				scene.background = new THREE.Color( 0x292929 );
+				scene.background = new THREE.Color( 0x161616 );
 				scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
 
 				renderer = new THREE.WebGLRenderer();
