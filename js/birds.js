@@ -151,7 +151,7 @@
 
                 camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
                 // z position
-				camera.position.z = 450;
+				camera.position.z = 650;
 
                 scene = new THREE.Scene();
                 // scene background color
