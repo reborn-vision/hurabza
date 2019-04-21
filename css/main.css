@@ -225,6 +225,29 @@ a:hover {
   top: 1.5rem;
 }
 
+.social__links {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  text-align: center;
+}
+
+.social__links li {
+  margin-bottom: 1rem;
+}
+
+.social__links a {
+  font-size: 1.4rem;
+  color: #6c757d;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.social__links a:hover {
+  cursor: pointer;
+  color: #0d993a;
+}
+
 #info {
   color: #000;
   position: absolute;

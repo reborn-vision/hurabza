@@ -131,3 +131,25 @@
     left: 2.5rem;
     top: 1.5rem;
 }
+
+.social__links {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  text-align: center;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+    color: $muted;
+    transition: .4s all;
+
+    &:hover {
+      cursor: pointer;
+      color: $green;
+    }
+  }
+}
