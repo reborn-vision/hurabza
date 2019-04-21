@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Roboto:300,400,500,600,700,800');
 
 
 .heading {
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: $wt;
 }
 
 .sub {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: $wt;
 }
 
 .regular {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    color: $wt;
 }
