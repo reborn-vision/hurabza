@@ -509,13 +509,15 @@ section {
   overflow: hidden;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   background: none;
   font-size: 2.5rem;
   color: #0d993a;
 }
 
-.swiper-button-next:focus, .swiper-button-prev:focus {
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
   outline: none;
 }
 
@@ -600,15 +602,15 @@ section {
 }
 
 .swiper__item-01 {
-  background: url("../media/travel.png");
+  background: url("../media/home/energy-and-utilities.png");
 }
 
 .swiper__item-02 {
-  background: url("../media/finance.png");
+  background: url("../media/home/financial-services.png");
 }
 
 .swiper__item-03 {
-  background: url("../media/travel.png");
+  background: url("../media/home/medical-technology-Recovered.png");
 }
 
 .swiper__item-04 {
