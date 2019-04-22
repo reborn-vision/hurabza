@@ -596,21 +596,21 @@ section {
 .swiper-industries .swiper-slide {
   height: 30vh;
   width: 30vw;
-  background-position: 0 0;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .swiper__item-01 {
-  background: url("../media/home/energy-and-utilities.png");
+  background: url("../media/home/energy.png");
 }
 
 .swiper__item-02 {
-  background: url("../media/home/financial-services.png");
+  background: url("../media/home/finance.png");
 }
 
 .swiper__item-03 {
-  background: url("../media/home/medical-technology-Recovered.png");
+  background: url("../media/home/med.png");
 }
 
 .swiper__item-04 {
