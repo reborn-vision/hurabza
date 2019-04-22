@@ -207,7 +207,93 @@ canvas {
     background: $green;
   }
 
-  .sampleClass {float:left;}
-@media only screen and (max-width: 800px){
-	.sampleClass {float:none;}
+.industries_info {
+    position: absolute;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+    transition: .6s all;
+    backface-visibility: hidden;
+    transform: translateY(30%);
+
+    h3 {
+        font-size: 1.5rem;
+        transition: .3 all;
+    }
+
+    p {
+        padding-top: 10px;
+        font-size: .9rem;
+    }
+
+    a {
+        margin-top: 2rem;
+    }
+
+    .info_hidden {
+        opacity: 0;
+        transition: .6s all;
+    }
+}
+
+.swiper-mob {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .swiper-desktop {
+        display: none;
+    }
+
+    .swiper-mob {
+        display: block;
+    }
+
+    .swiper_btn {
+        padding: 5px 10px;
+      font-size: .8rem;
+      border: 1px solid $wt;
+      transition: .4s all;
+    }
+}
+
+.swiper-industries .swiper-slide:hover .industries_info {
+    transform: translateY(0%);
+}
+.swiper-industries .swiper-slide:hover .info_hidden {
+    opacity: 1;
+    
+}
+
+.swiper-industries .swiper-slide {
+    height: 30vh;
+    width: 30vw;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper__item-01 {
+    background: url('../media/travel.png');
+}
+
+.swiper__item-02 {
+    background: url('../media/finance.png');
+}
+
+.swiper__item-03 {
+    background: url('../media/travel.png');
+}
+
+.swiper__item-04 {
+    background: url('../media/finance.png');
+}
+
+.swiper__item-05 {
+    background: url('../media/travel.png');
+}
+
+.swiper__item-06 {
+    background: url('../media/finance.png');
 }
