@@ -297,3 +297,13 @@ canvas {
 .swiper__item-06 {
     background: url('../media/finance.png');
 }
+
+.cert_wrap {
+    margin-top: 4rem;
+}
+
+@media (max-width: 992px) {
+    .cert_wrap-item {
+        text-align: center;
+    }
+}
