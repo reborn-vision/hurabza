@@ -526,13 +526,15 @@ section {
   overflow: hidden;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   background: none;
   font-size: 2.5rem;
   color: #0d993a;
 }
 
-.swiper-button-next:focus, .swiper-button-prev:focus {
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
   outline: none;
 }
 
@@ -544,13 +546,109 @@ section {
   background: #0d993a;
 }
 
-.sampleClass {
-  float: left;
+.industries_info {
+  position: absolute;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
-@media only screen and (max-width: 800px) {
-  .sampleClass {
-    float: none;
+.industries_info h3 {
+  font-size: 1.5rem;
+  -webkit-transition: .3 all;
+  transition: .3 all;
+}
+
+.industries_info p {
+  padding-top: 10px;
+  font-size: .9rem;
+}
+
+.industries_info a {
+  margin-top: 2rem;
+}
+
+.industries_info .info_hidden {
+  opacity: 0;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+}
+
+.swiper-mob {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .swiper-desktop {
+    display: none;
+  }
+  .swiper-mob {
+    display: block;
+  }
+  .swiper_btn {
+    padding: 5px 10px;
+    font-size: .8rem;
+    border: 1px solid #f7f7f7;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+}
+
+.swiper-industries .swiper-slide:hover .industries_info {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.swiper-industries .swiper-slide:hover .info_hidden {
+  opacity: 1;
+}
+
+.swiper-industries .swiper-slide {
+  height: 30vh;
+  width: 30vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper__item-01 {
+  background: url("../media/home/energy.png");
+}
+
+.swiper__item-02 {
+  background: url("../media/home/finance.png");
+}
+
+.swiper__item-03 {
+  background: url("../media/home/med.png");
+}
+
+.swiper__item-04 {
+  background: url("../media/finance.png");
+}
+
+.swiper__item-05 {
+  background: url("../media/travel.png");
+}
+
+.swiper__item-06 {
+  background: url("../media/finance.png");
+}
+
+.cert_wrap {
+  margin-top: 4rem;
+}
+
+@media (max-width: 992px) {
+  .cert_wrap-item {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

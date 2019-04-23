@@ -10,21 +10,18 @@
     display: none;
 }
 
-
 canvas {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: -1;
-  }
-  
+}
 
 .logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%, -50%);
     img {
         max-width: 250px;
     }
@@ -35,29 +32,28 @@ canvas {
         position: relative;
         top: 100%;
     }
-  }
-  
-  .home__about {
+}
+
+.home__about {
     text-align: center;
-  
     .regular {
-      margin-top: 2rem;
+        margin-top: 2rem;
     }
-  }
-  
-  .side_lines {
+}
+
+.side_lines {
     border-right: 1px solid $wt;
     border-left: 1px solid $wt;
-  }
+}
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     .side_lines {
         border-left: none;
         border-right: none;
     }
-  }
-  
-  .read_more {
+}
+
+.read_more {
     opacity: 0;
     color: $wt;
     padding: 10px 20px;
@@ -65,28 +61,26 @@ canvas {
     font-size: 1rem;
     border: 2px solid $wt;
     transition: .4s all;
-  
     &:hover {
-      border: 2px solid $green;
+        border: 2px solid $green;
     }
-  }
-  
-  .home__services {
-  
-    .sub {
-      color: $green;
-    }
-  
-    &-item:hover .read_more {
-      opacity: 1;
-    }
-  }
+}
 
-  .swiper-container {
+.home__services {
+    .sub {
+        color: $green;
+    }
+    &-item:hover .read_more {
+        opacity: 1;
+    }
+}
+
+.swiper-container {
     width: 100%;
     height: 100%;
-  }
-  .swiper-slide {
+}
+
+.swiper-slide {
     // text-align: center;
     font-size: 18px;
     // background: $black;
@@ -103,111 +97,193 @@ canvas {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
 
-  .swiper_img {
-      img {
-          max-width: 350px;
-      }
-  }
+.swiper_img {
+    img {
+        max-width: 350px;
+    }
+}
 
-  @media (max-width: 540px) {
+@media (max-width: 540px) {
     .swiper_img {
         img {
             max-width: 250px;
         }
     }
-
     .swiper-slide {
         ul {
             list-style: none;
-
             li {
                 font-size: 1rem;
             }
         }
     }
-  }
+}
 
-  .swiper_btn {
-      background: none;
-      outline: none;
-      color: $wt;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border: 2px solid $wt;
-      transition: .4s all;
+.swiper_btn {
+    background: none;
+    outline: none;
+    color: $wt;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid $wt;
+    transition: .4s all;
+    &:hover {
+        cursor: pointer;
+        color: $green;
+        border: 2px solid $green;
+    }
+}
 
-
-      &:hover {
-          cursor: pointer;
-          color: $green;
-          border: 2px solid $green;
-      }
-
-  }
-  
-
-  .swiper-container {
+.swiper-container {
     .swiper-slide {
         padding: 5%;
     }
-  }
+}
 
-  .swiper_info {
+.swiper_info {
     ul {
         margin-left: 2rem;
     }
-  }
+}
 
-  .swiper-pagination-bullet-active {
-      background: $green !important;
-  }
+.swiper-pagination-bullet-active {
+    background: $green !important;
+}
 
-  .swiper-container-horizontal>.swiper-pagination-bullets {
-      bottom: 0px !important;
-  }
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0px !important;
+}
 
-  section {
-      margin-top: 9rem;
-      margin-bottom: 9rem;
-      padding: 5%;
-  }
+section {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    padding: 5%;
+}
 
-  .home__capability {
+.home__capability {
+    .sub {
+        color: $green;
+    }
+    .capabilities {
+        margin-top: 4rem;
+    }
+}
 
-      .sub {
-          color: $green;
-      }
+.swiper-container-new {
+    overflow: hidden;
+}
 
-      .capabilities {
-          margin-top: 4rem;
-      }
-  }
+.swiper-button-next,
+.swiper-button-prev {
+    background: none;
+    font-size: 2.5rem;
+    color: $green;
+    &:focus {
+        outline: none;
+    }
+}
 
-  .swiper-container-new {
-      overflow: hidden;
-  }
+.swiper-button-prev {
+    left: -15px;
+}
 
-  .swiper-button-next, .swiper-button-prev {
-      background: none;
-      font-size: 2.5rem;
-      color: $green;
-
-      &:focus {
-          outline: none;
-      }
-  }
-
-  .swiper-button-prev {
-      left: -15px;
-  }
-
-  .swiper-pagination-bullet {
+.swiper-pagination-bullet {
     background: $green;
-  }
+}
 
-  .sampleClass {float:left;}
-@media only screen and (max-width: 800px){
-	.sampleClass {float:none;}
+.industries_info {
+    position: absolute;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+    transition: .6s all;
+    backface-visibility: hidden;
+    transform: translateY(30%);
+    h3 {
+        font-size: 1.5rem;
+        transition: .3 all;
+    }
+    p {
+        padding-top: 10px;
+        font-size: .9rem;
+    }
+    a {
+        margin-top: 2rem;
+    }
+    .info_hidden {
+        opacity: 0;
+        transition: .6s all;
+    }
+}
+
+.swiper-mob {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .swiper-desktop {
+        display: none;
+    }
+    .swiper-mob {
+        display: block;
+    }
+    .swiper_btn {
+        padding: 5px 10px;
+        font-size: .8rem;
+        border: 1px solid $wt;
+        transition: .4s all;
+    }
+}
+
+.swiper-industries .swiper-slide:hover .industries_info {
+    transform: translateY(0%);
+}
+
+.swiper-industries .swiper-slide:hover .info_hidden {
+    opacity: 1;
+}
+
+.swiper-industries .swiper-slide {
+    height: 30vh;
+    width: 30vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.swiper__item-01 {
+    background: url('../media/home/energy.png');
+}
+
+.swiper__item-02 {
+    background: url('../media/home/finance.png');
+}
+
+.swiper__item-03 {
+    background: url('../media/home/med.png');
+}
+
+.swiper__item-04 {
+    background: url('../media/finance.png');
+}
+
+.swiper__item-05 {
+    background: url('../media/travel.png');
+}
+
+.swiper__item-06 {
+    background: url('../media/finance.png');
+}
+
+.cert_wrap {
+    margin-top: 4rem;
+}
+
+@media (max-width: 992px) {
+    .cert_wrap-item {
+        text-align: center;
+    }
 }
