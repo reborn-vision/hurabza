@@ -77,6 +77,23 @@
   padding-left: 6.5rem;
 }
 
+.about_col_1 {
+  padding: 0px 20px 0 0;
+}
+
+.about_text_wrap {
+  position: relative;
+  z-index: 10;
+  padding: 100px 0px 0px 0px;
+}
+
+.sub-one {
+  position: absolute;
+  z-index: 1;
+  font-size: 20rem;
+  color: #333333;
+}
+
 *,
 *::after,
 *::before {
