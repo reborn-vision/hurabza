@@ -878,4 +878,28 @@ section {
 .page-item.disabled .page-link {
   background: #0d993a !important;
 }
+
+.blog_post img {
+  max-width: 250px;
+  float: left;
+  margin-right: 2rem;
+}
+
+.blog_post__date .place {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.blog_post .sub {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  img {
+    float: none !important;
+    margin-bottom: 1rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
