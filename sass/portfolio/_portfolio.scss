@@ -1,6 +1,7 @@
 .portfolio_wrap {
     position: relative;
     top: 15vh;
+    padding-bottom: 5% !important;
     .sub {
         font-size: 1.5rem;
     }
@@ -9,7 +10,7 @@
 .portfolio_container {
     margin: 0 auto;
     position: relative;
-    top: 15vh;
+    top: 5vh;
     margin-bottom: 15vh;
 }
 
@@ -36,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border: 1px solid $green;
+        border: 2px solid $green;
         z-index: -1;
         transform: scale(0);
         opacity: 0;
@@ -74,4 +75,21 @@
     .item {
         width: 90%;
     }
+}
+
+.portfolio_item {
+    position: relative;
+    top: 15vh;
+    padding-bottom: 5% !important;
+}
+
+.portfolio_photo_1 {
+    width: 100%;
+    height: 25vh;
+    background-image: url("https://cdn.dribbble.com/users/4859/screenshots/5960347/sweep-ios_2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

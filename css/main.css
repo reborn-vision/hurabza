@@ -160,6 +160,33 @@ a:hover {
   color: #0d993a;
 }
 
+.fade-transition {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.8s;
+  animation-name: fade;
+  animation-duration: 2.8s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .heading {
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
@@ -663,6 +690,7 @@ section {
 .portfolio_wrap {
   position: relative;
   top: 15vh;
+  padding-bottom: 5% !important;
 }
 
 .portfolio_wrap .sub {
@@ -672,7 +700,7 @@ section {
 .portfolio_container {
   margin: 0 auto;
   position: relative;
-  top: 15vh;
+  top: 5vh;
   margin-bottom: 15vh;
 }
 
@@ -703,7 +731,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #0d993a;
+  border: 2px solid #0d993a;
   z-index: -1;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -745,5 +773,27 @@ section {
   .item {
     width: 90%;
   }
+}
+
+.portfolio_item {
+  position: relative;
+  top: 15vh;
+  padding-bottom: 5% !important;
+}
+
+.portfolio_photo_1 {
+  width: 100%;
+  height: 25vh;
+  background-image: url("https://cdn.dribbble.com/users/4859/screenshots/5960347/sweep-ios_2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services_wrap {
+  position: relative;
+  top: 15vh;
 }
 /*# sourceMappingURL=main.css.map */

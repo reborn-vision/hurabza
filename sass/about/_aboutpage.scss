@@ -5,7 +5,6 @@
 .sub-about {
     font-size: 1rem;
     color: #0d993a;
-
     &:hover {
         color: #ffffff;
     }
@@ -33,23 +32,18 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
     li {
         color: #6c757d;
         padding: 0.5rem;
         font-size: 1rem;
-
         &:hover {
             cursor: pointer;
             color: #0d993a;
         }
     }
-
     li.active {
-            color: #0d993a;
+        color: #0d993a;
     }
-
-    
 }
 
 @media (max-width: 992px) {
@@ -57,7 +51,6 @@
         display: flex !important;
         justify-content: space-between !important;
         font-size: 12px;
-
         li {
             text-align: center;
         }
@@ -87,7 +80,6 @@
     padding: 0px 20px 0 0;
 }
 
-
 .about_text_wrap {
     position: relative;
     z-index: 10;
@@ -101,4 +93,10 @@
     color: #333333;
 }
 
-
+// .active {
+//     font-weight: 600;
+//     &::after {
+//         background: #fff;
+//         padding: 0px 10px;
+//     }
+// }
