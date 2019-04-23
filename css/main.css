@@ -665,6 +665,10 @@ section {
   top: 15vh;
 }
 
+.portfolio_wrap .sub {
+  font-size: 1.5rem;
+}
+
 .portfolio_container {
   margin: 0 auto;
   position: relative;
