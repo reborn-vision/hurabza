@@ -40,7 +40,7 @@
 .slider__list li {
   color: #6c757d;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .slider__list li:hover {
@@ -795,5 +795,87 @@ section {
 .services_wrap {
   position: relative;
   top: 15vh;
+}
+
+.services_wrap .sub {
+  font-size: 1.125rem;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.services_item:hover .sub {
+  color: #0d993a;
+  cursor: pointer;
+}
+
+.services_row {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.slider__wrap .regular {
+  max-width: 80%;
+}
+
+.services_wrap .heading {
+  margin-bottom: 4%;
+}
+
+.thumbnail {
+  height: 250px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.thumbnail:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.thumbnail__info {
+  padding: 5%;
+}
+
+.thumbnail__info .place {
+  margin-bottom: 0;
+}
+
+.thumbnail__heading {
+  color: #f7f7f7;
+  position: absolute;
+  bottom: 1rem;
+  padding: 5%;
+}
+
+.articles__row .col-lg-4 {
+  margin-bottom: 3%;
+}
+
+.page-item {
+  background: none !important;
+  border: 2px solid #0d993a !important;
+  margin: 2px;
+}
+
+.page-item .page-link {
+  background: none;
+  border: none !important;
+  color: #f7f7f7 !important;
+  border-radius: 0px !important;
+}
+
+.page-item.disabled .page-link {
+  background: #0d993a !important;
 }
 /*# sourceMappingURL=main.css.map */

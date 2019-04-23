@@ -1,4 +1,24 @@
 .services_wrap {
     position: relative;
     top: 15vh;
+    .sub {
+        font-size: 1.125rem;
+        transition: .4s all;
+    }
+}
+
+.services_item:hover .sub {
+    color: $green;
+    cursor: pointer;
+}
+
+.services_row {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.slider__wrap {
+    .regular {
+        max-width: 80%;
+    }
 }
