@@ -16,50 +16,13 @@
         height: 363px !important; */
     width: 100%;
     height: 100%;
-    transform: scale(1.6);
+    // transform: scale(1.6);
 }
 
 .cache {
     transform: translate3d(0, 0, 0);
 }
 
-// html.is-mobile #header-about {
-//     font-size: 24px;
-//     line-height: 32px;
-// }
-// html.is-mobile #menu-btn {
-//     left: 0;
-//     width: 100%;
-// }
-// #menu-btn canvas {
-//     display: block;
-//     width: 50px;
-//     height: 50px;
-// }
-// html.is-mobile #menu-btn canvas {
-//     float: none;
-//     margin: 0 auto;
-// }
-// #view-modes {
-//     display: none;
-//     position: absolute;
-//     right: 50px;
-//     top: 32px;
-//     width: 50px;
-//     height: 50px;
-//     cursor: pointer;
-//     z-index: 14;
-// }
-// #view-modes canvas {
-//     display: block;
-//     margin-left: 10px;
-//     margin-top: 10px;
-//     width: 30px;
-//     height: 30px;
-// }
-// html.is-mobile #view-modes {
-//     display: none;
-// }
 #all {
     display: none;
     position: absolute;
@@ -69,8 +32,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    visibility: visible;
-    opacity: 1;
+    display: none;
 }
 
 html.is-mobile #nodes {
@@ -82,6 +44,7 @@ html.is-mobile #nodes {
     position: relative;
     top: -16px;
     margin-bottom: 280px;
+    display: none;
 }
 
 html.is-mobile .node {
@@ -113,7 +76,6 @@ html.is-mobile .node {
     display: inline-block;
     position: relative;
     padding: 10%;
-    // text-align: center;
     transition: .8s all;
     display: flex;
     justify-content: center;
@@ -145,7 +107,6 @@ form {
     outline: none;
     text-align: left;
     background: none;
-    padding: 10px 20px;
     color: #fff;
     transition: .6s all;
     border: none;
