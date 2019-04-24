@@ -902,4 +902,135 @@ section {
     margin-bottom: 1rem;
   }
 }
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("fonts/apercu-regular-pro.eot");
+  src: url("fonts/apercu-regular-pro.eot?#iefix") format("eot"), url("fonts/apercu-regular-pro.woff") format("woff2"), url("fonts/apercu-regular-pro.woff") format("woff"), url("fonts/apercu-regular-pro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Apercu-Light';
+  src: url("fonts/apercu-light-pro.eot");
+  src: url("fonts/apercu-light-pro.eot?#iefix") format("eot"), url("fonts/apercu-light-pro.woff") format("woff2"), url("fonts/apercu-light-pro.woff") format("woff"), url("fonts/apercu-light-pro.ttf") format("truetype");
+}
+
+#canvas {
+  position: relative;
+  /* width: 500px !important;
+        height: 363px !important; */
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.cache {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#all {
+  display: none;
+  position: absolute;
+}
+
+#nodes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+html.is-mobile #nodes {
+  visibility: hidden;
+}
+
+.node {
+  display: none;
+  position: relative;
+  top: -16px;
+  margin-bottom: 280px;
+}
+
+html.is-mobile .node {
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* Rusek */
+.circle-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.contacts-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.left-part {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 10%;
+  -webkit-transition: .8s all;
+  transition: .8s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-part {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+}
+
+.target-map,
+.target-form {
+  display: none;
+  background: transparent;
+}
+
+form {
+  padding: 5%;
+}
+
+.map-responsive {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#toggle-map,
+#toggle-form {
+  outline: none;
+  text-align: left;
+  background: none;
+  padding: 10px 20px;
+  color: #fff;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+  border: none;
+}
+
+#toggle-form:hover {
+  color: #0d993a;
+}
+
+#toggle-map:hover {
+  color: #0d993a;
+}
 /*# sourceMappingURL=main.css.map */

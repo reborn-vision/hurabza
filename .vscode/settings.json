@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "html.format.enable": false
+    "html.format.enable": false,
+    "editor.formatOnSave": false,
+    "workbench.action.files.saveWithoutFormatting":true
 }
