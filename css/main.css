@@ -187,6 +187,10 @@ a:hover {
   }
 }
 
+.logo__small img {
+  max-width: 120px;
+}
+
 .heading {
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
