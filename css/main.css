@@ -162,9 +162,9 @@ a:hover {
 
 .fade-transition {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.8s;
+  -webkit-animation-duration: 6s;
   animation-name: fade;
-  animation-duration: 2.8s;
+  animation-duration: 6s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -189,6 +189,12 @@ a:hover {
 
 .logo__small img {
   max-width: 120px;
+}
+
+@media (max-width: 375px) {
+  img {
+    max-width: 100px;
+  }
 }
 
 .heading {
@@ -691,6 +697,16 @@ section {
   }
 }
 
+.brt {
+  color: #0d993a;
+  font-size: 1.5rem;
+}
+
+.tch {
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+
 .portfolio_wrap {
   position: relative;
   top: 15vh;
@@ -993,6 +1009,7 @@ html.is-mobile .node {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
 }
 
 .right-part {
@@ -1033,5 +1050,31 @@ form {
 
 #toggle-map:hover {
   color: #0d993a;
+}
+
+.left-part-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .contacts-desktop {
+    display: none;
+  }
+  .left-part-mobile {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 10%;
+    -webkit-transition: .8s all;
+    transition: .8s all;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
+    top: 35vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

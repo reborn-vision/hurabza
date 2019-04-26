@@ -58,9 +58,9 @@ a {
 
 .fade-transition {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.8s;
+    -webkit-animation-duration: 6s;
     animation-name: fade;
-    animation-duration: 2.8s;
+    animation-duration: 6s;
     backface-visibility: hidden;
 }
 
@@ -85,5 +85,11 @@ a {
 .logo__small {
     img {
         max-width: 120px;
+    }
+}
+
+@media (max-width: 375px) {
+    img {
+        max-width: 100px;
     }
 }
