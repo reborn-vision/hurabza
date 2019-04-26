@@ -89,7 +89,9 @@ a {
 }
 
 @media (max-width: 375px) {
-    img {
-        max-width: 100px;
+    .logo__small {
+        img {
+            max-width: 100px !important;
+        }
     }
 }

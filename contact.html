@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8">
-    <title>Circle Animations</title>
+    <title>Hurabza</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/form.css">
+    <!-- <link rel="stylesheet" href="css/form.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -50,27 +50,32 @@
             <div class="text">
                 <ul>
                     <li>
-                        <a href="/" class="menu-item">ГЛАВНАЯ</a>
+                        <a href="/" class="menu-item" onclick="play()">ГЛАВНАЯ</a>
                     </li>
                     <li>
-                        <a href="/about.html" class="menu-item">О НАС</a>
+                        <a href="/about.html" class="menu-item" onclick="play()">О НАС</a>
                     </li>
                     <li>
-                        <a href="/portfolio.html" class="menu-item">ПОРТФОЛИО</a>
+                        <a href="/portfolio.html" class="menu-item" onclick="play()">ПОРТФОЛИО</a>
                     </li>
                     <li>
-                        <a href="/service.html" class="menu-item">УСЛУГИ</a>
+                        <a href="/service.html" class="menu-item" onclick="play()">УСЛУГИ</a>
                     </li>
                     <li>
-                        <a href="/articles.html" class="menu-item">СТАТЬИ И ОБЗОРЫ</a>
+                        <a href="/articles.html" class="menu-item" onclick="play()">СТАТЬИ И ОБЗОРЫ</a>
                     </li>
                     <li>
-                        <a href="/contact.html" class="menu-item">КОТНТАКТЫ</a>
+                        <a href="/contact.html" class="menu-item" onclick="play()">КОТНТАКТЫ</a>
                     </li>
                 </ul>
             </div>
         </div>
         <ul class="social__links list-unstyled">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
             <li>
                 <a href="#" target="_blank">
                     <i class="fab fa-instagram"></i>
@@ -149,18 +154,28 @@
 
                     <div class="target-map">
                         <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7639168727!2d36.82513011480197!3d55.5807480807697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C+Russia!5e0!3m2!1sen!2sua!4v1555591689206!5m2!1sen!2sua"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71891.38613777523!2d37.57775034065344!3d55.730602242115715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aef54f0dd7f%3A0xee31aa3aa387d129!2sTaganskaya!5e0!3m2!1sen!2sua!4v1556308824809!5m2!1sen!2sua"
                                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
 
 
                     <div class="target-form">
-                        <form id="form" class="topBefore">
-                            <input id="name" type="text" placeholder="NAME">
-                            <input id="email" type="text" placeholder="E-MAIL">
-                            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                            <input id="submit" type="submit" value="GO!">
+                        <form id="contact-form" class="form" action="#" method="POST" role="form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Ваше имя</label>
+                                <input type="text" class="form-input" id="name" name="name" placeholder="Ваше имя" tabindex="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="tel">Ваш номер телефона</label>
+                                <input type="tel" class="form-input" id="tel" name="tel" placeholder="Ваш номер телефона" tabindex="2" required onkeypress="return isNumberKey(event)">
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit">
+                                <a href="#" class="swiper_btn"><span>Отправить</span></a>
+                            </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -207,8 +222,8 @@
                             <li>
                                 <span style="color: green;">Email:</span> info@gmail.com
                             </li>
-                            <li class="mt-1">
-                                <button>
+                            <li class="mt-5">
+                                <button data-toggle="modal" data-target="#zayavkaModal">
                                   <span>GET IN TOUCH
                                       <br>
                                       &#x27F6;
@@ -218,9 +233,56 @@
                         </ul>
                     </div>
                 </div>
+                <div class="map_wrap_mobile">
+                    <div class="map-mobile">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71891.38613777523!2d37.57775034065344!3d55.730602242115715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aef54f0dd7f%3A0xee31aa3aa387d129!2sTaganskaya!5e0!3m2!1sen!2sua!4v1556308824809!5m2!1sen!2sua"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- ОСТАВИТЬ ЗАЯВКУ MODAL -->
+    <div class="modal fade" id="zayavkaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Оставить заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&#10005;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Ваше имя</label>
+                                    <input type="text" class="form-input" id="name" name="name" placeholder="Ваше имя" tabindex="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="tel">Ваш номер телефона</label>
+                                    <input type="tel" class="form-input" id="tel" name="tel" placeholder="Ваш номер телефона" tabindex="2" required onkeypress="return isNumberKey(event)">
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit">
+                                    <a href="#" class="swiper_btn"><span>Отправить</span></a>
+                                </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END ОСТАВИТЬ ЗАЯВКУ MODAL -->
+
+    <!-- Click sound -->
+    <audio id="audio" src="media/button.mp3"></audio>
 
     <!-- Three.js -->
     <script src="js/three.min.js"></script>

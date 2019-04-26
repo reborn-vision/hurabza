@@ -297,3 +297,8 @@ section {
     color: $wt;
     font-size: 1.5rem;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 2;
+}

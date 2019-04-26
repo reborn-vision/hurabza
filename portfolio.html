@@ -51,27 +51,32 @@
             <div class="text">
                 <ul>
                     <li>
-                        <a href="/" class="menu-item">ГЛАВНАЯ</a>
+                        <a href="/" class="menu-item" onclick="play()">ГЛАВНАЯ</a>
                     </li>
                     <li>
-                        <a href="/about.html" class="menu-item">О НАС</a>
+                        <a href="/about.html" class="menu-item" onclick="play()">О НАС</a>
                     </li>
                     <li>
-                        <a href="/portfolio.html" class="menu-item">ПОРТФОЛИО</a>
+                        <a href="/portfolio.html" class="menu-item" onclick="play()">ПОРТФОЛИО</a>
                     </li>
                     <li>
-                        <a href="/service.html" class="menu-item">УСЛУГИ</a>
+                        <a href="/service.html" class="menu-item" onclick="play()">УСЛУГИ</a>
                     </li>
                     <li>
-                        <a href="/articles.html" class="menu-item">СТАТЬИ И ОБЗОРЫ</a>
+                        <a href="/articles.html" class="menu-item" onclick="play()">СТАТЬИ И ОБЗОРЫ</a>
                     </li>
                     <li>
-                        <a href="/contact.html" class="menu-item">КОТНТАКТЫ</a>
+                        <a href="/contact.html" class="menu-item" onclick="play()">КОТНТАКТЫ</a>
                     </li>
                 </ul>
             </div>
         </div>
         <ul class="social__links list-unstyled">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
             <li>
                 <a href="#" target="_blank">
                     <i class="fab fa-instagram"></i>
@@ -152,6 +157,9 @@
         </div>
 
     </div>
+
+    <!-- Click sound -->
+    <audio id="audio" src="media/button.mp3"></audio>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
