@@ -300,3 +300,20 @@ section {
 .swiper-button-prev {
     z-index: 2;
 }
+
+
+.contact_btn {
+    background: none;
+    outline: none;
+    color: $wt;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid $wt;
+    transition: .4s all;
+    margin-top: 2rem !important;
+    &:hover {
+        cursor: pointer;
+        color: $green;
+        border: 2px solid $green;
+    }
+}

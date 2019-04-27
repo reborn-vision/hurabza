@@ -646,6 +646,22 @@ section {
   z-index: 2;
 }
 
+.contact_btn {
+  background: none;
+  outline: none;
+  color: #f7f7f7;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #f7f7f7;
+  transition: 0.4s all;
+  margin-top: 2rem !important;
+}
+.contact_btn:hover {
+  cursor: pointer;
+  color: #0d993a;
+  border: 2px solid #0d993a;
+}
+
 .portfolio_wrap {
   position: relative;
   top: 15vh;
