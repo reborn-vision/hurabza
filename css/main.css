@@ -532,10 +532,6 @@ section {
   outline: none;
 }
 
-.swiper-button-prev {
-  left: -15px;
-}
-
 .swiper-pagination-bullet {
   background: #0d993a;
 }
