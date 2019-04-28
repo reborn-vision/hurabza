@@ -505,8 +505,8 @@ canvas {
 }
 
 section {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 5%;
 }
 
@@ -660,6 +660,15 @@ section {
   cursor: pointer;
   color: #0d993a;
   border: 2px solid #0d993a;
+}
+
+.home__about {
+  margin: 0 !important;
+  margin-top: 1rem !important;
+}
+
+.home__services {
+  margin-top: 1rem !important;
 }
 
 .portfolio_wrap {
