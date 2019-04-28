@@ -676,6 +676,10 @@ section {
     display: none;
   }
 }
+.swiper-button-next {
+  right: 15px !important;
+}
+
 .portfolio_wrap {
   position: relative;
   top: 15vh;
