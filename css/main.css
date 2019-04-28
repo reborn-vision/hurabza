@@ -671,6 +671,11 @@ section {
   margin-top: 1rem !important;
 }
 
+@media (max-width: 500px) {
+  .mobile_hide {
+    display: none;
+  }
+}
 .portfolio_wrap {
   position: relative;
   top: 15vh;
