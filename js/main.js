@@ -8,30 +8,30 @@ $(document).ready(function() {
     $("#toggle-form").click(function() {
         $(".target-form").toggle('left');
     });
+  
+    var showingMap = false
+    var showingForm = false
+    
+    function animate() {
+        var changeInLeft = !showingMap && !showingForm ? "0px" : "-245px"
+        $(".left-part").stop().animate({ left: changeInLeft }, 100);
+    }
 
     // hide one on click 
     $(document).on("click", "#toggle-map", function(event) {
         $(".target-form").hide();
         event.preventDefault();
-        if ($(this).hasClass("isDown")) {
-            $(".left-part").stop().animate({ left: "0px" }, 100);
-        } else {
-            $(".left-part").stop().animate({ left: "-245px" }, 100);
-        }
-        $(this).toggleClass("isDown");
-        return false;
+        if (showingForm) showingForm = !showingForm;
+        showingMap = !showingMap;
+        animate();
     });
 
     $(document).on("click", "#toggle-form", function(event) {
         $(".target-map").hide();
         event.preventDefault();
-        if ($(this).hasClass("isDown")) {
-            $(".left-part").stop().animate({ left: "0px" }, 100);
-        } else {
-            $(".left-part").stop().animate({ left: "-245px" }, 100);
-        }
-        $(this).toggleClass("isDown");
-        return false;
+        showingForm = !showingForm;
+        if (showingMap) showingMap = !showingMap;
+        animate();
     });
 
 });

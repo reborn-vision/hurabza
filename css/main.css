@@ -176,6 +176,10 @@ a:hover {
     max-width: 100px !important;
   }
 }
+.active-menu {
+  color: #0d993a !important;
+}
+
 .heading {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
@@ -226,7 +230,7 @@ header {
   text-align: center;
 }
 .overlay ul li a {
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-family: "Montserrat";
   font-weight: 800;
   color: #f7f7f7;
@@ -1219,7 +1223,7 @@ iframe {
     display: flex;
     justify-content: center;
     z-index: 2;
-    top: 30vh;
+    top: 28vh;
     text-align: center;
   }
 
