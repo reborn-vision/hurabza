@@ -521,8 +521,6 @@ canvas {
 }
 
 section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   padding: 5%;
 }
 
@@ -708,6 +706,40 @@ section {
   background-repeat: no-repeat;
 }
 
+.swiper-button-prev-unique {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  z-index: 3;
+}
+.swiper-button-prev-unique:hover {
+  cursor: pointer;
+}
+.swiper-button-prev-unique:focus {
+  outline: none;
+}
+.swiper-button-prev-unique:active {
+  outline: none;
+}
+
+.swiper-button-next-unique {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  z-index: 3;
+}
+.swiper-button-next-unique:hover {
+  cursor: pointer;
+}
+.swiper-button-next-unique:focus {
+  outline: none;
+}
+.swiper-button-next-unique:active {
+  outline: none;
+}
+
 .portfolio_wrap {
   position: relative;
   top: 15vh;
@@ -823,6 +855,49 @@ section {
   max-width: 80%;
 }
 
+.wiggle:hover {
+  cursor: not-allowed;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-name: wiggle;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 0);
+  }
+  10% {
+    transform: translate(-1px, 0);
+  }
+  20% {
+    transform: translate(1px, 0);
+  }
+  30% {
+    transform: translate(-1px, 0);
+  }
+  40% {
+    transform: translate(1px, 0);
+  }
+  50% {
+    transform: translate(-1px, 0);
+  }
+  60% {
+    transform: translate(1px, 0);
+  }
+  70% {
+    transform: translate(-1px, 0);
+  }
+  80% {
+    transform: translate(1px, 0);
+  }
+  90% {
+    transform: translate(-1px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .services_wrap .heading {
   margin-bottom: 4%;
 }

@@ -169,8 +169,8 @@ canvas {
 }
 
 section {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    // margin-top: 5rem;
+    // margin-bottom: 5rem;
     padding: 5%;
 }
 
@@ -363,4 +363,44 @@ section {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.swiper-button-prev-unique {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    z-index: 3;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        outline: none;
+    }
+}
+
+.swiper-button-next-unique {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    z-index: 3;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        outline: none;
+    }
 }
