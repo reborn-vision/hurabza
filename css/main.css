@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Roboto:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 .about_section {
   margin-top: 7rem !important;
 }
@@ -129,7 +130,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  background: #161616;
+  background: #0d0e0f;
   color: #f7f7f7;
 }
 
@@ -231,8 +232,7 @@ header {
 }
 .overlay ul li a {
   font-size: 2.1rem;
-  font-family: "Montserrat";
-  font-weight: 800;
+  font-family: "Raleway", sans-serif;
   color: #f7f7f7;
   text-decoration: none;
   transition: 0.4s all;
@@ -420,7 +420,6 @@ canvas {
   }
 }
 .read_more {
-  opacity: 0;
   color: #f7f7f7;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -432,10 +431,23 @@ canvas {
   border: 2px solid #0d993a;
 }
 
+.read_more_sm {
+  opacity: 0;
+  color: #f7f7f7;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 2px solid #f7f7f7;
+  transition: 0.4s all;
+}
+.read_more_sm:hover {
+  border: 2px solid #0d993a;
+}
+
 .home__services .sub {
   color: #0d993a;
 }
-.home__services-item:hover .read_more {
+.home__services-item:hover .read_more_sm {
   opacity: 1;
 }
 
@@ -514,6 +526,19 @@ section {
   padding: 5%;
 }
 
+@media (max-width: 725px) {
+  .swiper {
+    margin-top: 0 !important;
+  }
+
+  .home__services {
+    margin-bottom: 0 !important;
+  }
+}
+.home__services-item {
+  padding-bottom: 5%;
+}
+
 .home__capability .sub {
   color: #0d993a;
 }
@@ -570,6 +595,10 @@ section {
   display: none;
 }
 
+.swiper-mob-img {
+  max-width: 250px;
+}
+
 @media (max-width: 992px) {
   .swiper-desktop {
     display: none;
@@ -586,11 +615,11 @@ section {
     transition: 0.4s all;
   }
 }
-.swiper-industries .swiper-slide:hover .industries_info {
+.swiper-slide:hover .industries_info {
   transform: translateY(0%);
 }
 
-.swiper-industries .swiper-slide:hover .info_hidden {
+.swiper-slide:hover .info_hidden {
   opacity: 1;
 }
 
@@ -602,28 +631,16 @@ section {
   background-size: contain;
 }
 
-.swiper__item-01 {
+.swiper__item-01, .swiper__item-mob-01 {
   background: url("../media/home/energy.png");
 }
 
-.swiper__item-02 {
+.swiper__item-02, .swiper__item-mob-02 {
   background: url("../media/home/finance.png");
 }
 
-.swiper__item-03 {
+.swiper__item-03, .swiper__item-mob-03 {
   background: url("../media/home/med.png");
-}
-
-.swiper__item-04 {
-  background: url("../media/finance.png");
-}
-
-.swiper__item-05 {
-  background: url("../media/travel.png");
-}
-
-.swiper__item-06 {
-  background: url("../media/finance.png");
 }
 
 .cert_wrap {
@@ -682,6 +699,13 @@ section {
 }
 .swiper-button-next {
   right: 15px !important;
+}
+
+.swiper__item-mob-01, .swiper__item-mob-02, .swiper__item-mob-03 {
+  height: 30vh;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .portfolio_wrap {
@@ -1189,7 +1213,7 @@ iframe {
 
 .map-mobile {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 46.25%;
   position: relative;
   height: 0;
 }
@@ -1206,7 +1230,7 @@ iframe {
   display: none;
   position: relative;
   bottom: 0;
-  top: 27vh;
+  top: 35vh;
 }
 
 @media (max-width: 992px) {
@@ -1223,7 +1247,7 @@ iframe {
     display: flex;
     justify-content: center;
     z-index: 2;
-    top: 28vh;
+    top: 27vh;
     text-align: center;
   }
 

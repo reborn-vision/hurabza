@@ -151,6 +151,8 @@
         }
     </script>
 
+
+
     <script type="x-shader/x-vertex" id="birdVS">
         attribute vec2 reference;
         attribute float birdVertex;
@@ -554,44 +556,49 @@
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- swiper mobile  -->
-                    <div class="swiper-container-new swiper-mob">
-                        <div class="swiper-wrapper swiper-industries h-100">
-                            <div class="swiper-slide swiper__item-01 align-self-center">
-                                <div class="industries_info">
+            <div class="row swiper-mob">
+                <div class="col">
+                    <!-- Swiper -->
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper__item-mob-01">
+                              <div class="industries_info">
                                     <h3>Energy and Utilities</h3>
                                     <div class="info_hidden">
                                         <p>We empower the transformation journey for energy companies, with total regulatory alignment for maximum operational efficiency.</p>
                                         <a href="#" class="swiper_btn">READ MORE</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide swiper__item-02">
-                                <div class="industries_info">
+                          </div>
+                          <div class="swiper-slide swiper__item-mob-02">
+                              <div class="industries_info">
                                     <h3>Energy and Utilities</h3>
                                     <div class="info_hidden">
                                         <p>We empower the transformation journey for energy companies, with total regulatory alignment for maximum operational efficiency.</p>
                                         <a href="#" class="swiper_btn">READ MORE</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide swiper__item-03">
-                                <div class="industries_info">
+                          </div>
+                          <div class="swiper-slide swiper__item-mob-03">
+                              <div class="industries_info">
                                     <h3>Energy and Utilities</h3>
                                     <div class="info_hidden">
                                         <p>We empower the transformation journey for energy companies, with total regulatory alignment for maximum operational efficiency.</p>
                                         <a href="#" class="swiper_btn">READ MORE</a>
                                     </div>
                                 </div>
-                            </div>
+                          </div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
-                    </div>
-                    <!-- End swiper mobile -->
+                      </div>
+
                 </div>
             </div>
+            
         </section>
 
         <section class="home__capability">
@@ -614,7 +621,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more">
+                    <a href="#" class="read_more_sm">
 								Read more
 							</a>
                 </div>
@@ -626,7 +633,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more">
+                    <a href="#" class="read_more_sm">
 								Read more
 							</a>
                 </div>
@@ -638,7 +645,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more">
+                    <a href="#" class="read_more_sm">
 								Read more
 							</a>
                 </div>
@@ -762,21 +769,6 @@
 
         var swiper = new Swiper('.swiper-container-new', {
             slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            grabCursor: true,
-
-        });
-
-        var swiper = new Swiper('.swiper-mob', {
-            slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             pagination: {
