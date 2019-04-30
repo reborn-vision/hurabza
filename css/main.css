@@ -898,6 +898,12 @@ section {
     transform: translate(0, 0);
   }
 }
+.services_item img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .services_wrap .heading {
   margin-bottom: 4%;
 }

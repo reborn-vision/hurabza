@@ -49,3 +49,11 @@
   90% { transform: translate(-1px, 0); }
   100% { transform: translate(0, 0); }
 }
+
+.services_item {
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
