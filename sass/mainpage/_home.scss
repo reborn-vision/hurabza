@@ -113,7 +113,7 @@ canvas {
 
 .swiper_img {
     img {
-        max-width: 350px;
+        max-width: 250px;
     }
 }
 
@@ -402,5 +402,11 @@ section {
 
     &:active {
         outline: none;
+    }
+}
+
+.swiper-slide {
+    ul {
+        font-size: 1rem;
     }
 }
