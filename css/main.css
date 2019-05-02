@@ -172,9 +172,9 @@ a:hover {
   max-width: 120px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .logo__small img {
-    max-width: 100px !important;
+    max-width: 80px !important;
   }
 }
 .active-menu {
@@ -218,8 +218,9 @@ header .row {
 header .row .col {
   position: fixed;
   background: #0d0e0f;
-  height: 9%;
+  height: 60px;
   z-index: 12;
+  top: 0;
 }
 
 .overlay {
@@ -277,7 +278,7 @@ header .row .col {
   background: #f7f7f7;
   width: 70%;
   height: 2px;
-  top: 50%;
+  top: 20%;
   right: 0px;
   margin-top: -5px;
   opacity: 1;
@@ -327,7 +328,7 @@ header .row .col {
 .lang__btns {
   position: fixed;
   right: 8rem;
-  top: 2rem;
+  top: 1.1rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -349,7 +350,7 @@ header .row .col {
 .logo__small {
   position: fixed;
   left: 2.5rem;
-  top: 1.5rem;
+  top: 0.5rem;
 }
 
 .social__links {
@@ -374,6 +375,98 @@ header .row .col {
 @media (max-width: 992px) {
   .social__links {
     display: none;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    position: relative;
+    z-index: 5;
+  }
+  header .row {
+    margin: 0 !important;
+  }
+  header .row .col {
+    position: fixed;
+    background: #0d0e0f;
+    height: 45px;
+    z-index: 12;
+    top: 0;
+  }
+
+  .burger-menu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    top: 0.5rem;
+    right: 4rem;
+  }
+
+  .burger {
+    position: absolute;
+    background: #f7f7f7;
+    width: 30%;
+    height: 2px;
+    top: 45%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+  }
+
+  .burger::before {
+    position: absolute;
+    background: #f7f7f7;
+    width: 35px;
+    height: 2px;
+    top: 5px;
+    content: "";
+    display: block;
+  }
+
+  .burger::after {
+    position: absolute;
+    background: #0d993a;
+    width: 35px;
+    height: 2px;
+    bottom: 5px;
+    content: "";
+    display: block;
+  }
+
+  .burger::after, .burger::before, .burger {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .burger-menu.menu-on .burger::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .burger-menu.menu-on .burger::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .burger-menu.menu-on .burger {
+    background: rgba(111, 111, 111, 0);
+  }
+
+  .logo__small {
+    position: fixed;
+    left: 2.5rem;
+    top: 1rem;
+  }
+
+  .lang__btns {
+    position: fixed;
+    right: 8rem;
+    top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 #info {

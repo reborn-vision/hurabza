@@ -88,10 +88,10 @@ a {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
     .logo__small {
         img {
-            max-width: 100px !important;
+            max-width: 80px !important;
         }
     }
 }

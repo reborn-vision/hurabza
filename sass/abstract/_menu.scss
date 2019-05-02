@@ -7,8 +7,9 @@ header {
     .col {
       position: fixed;
       background: $black;
-      height: 9%;
+      height: 60px;
       z-index: 12;
+      top: 0;
     }
   }
 }
@@ -73,7 +74,7 @@ header {
     background: $wt;
     width: 70%;
     height: 2px;
-    top: 50%;
+    top: 20%;
     right: 0px;
     margin-top: -5px;
     opacity: 1;
@@ -117,7 +118,7 @@ header {
 .lang__btns {
     position: fixed;
     right: 8rem;
-    top: 2rem;
+    top: 1.1rem;
     display: flex;
     justify-content: flex-end;
 
@@ -143,7 +144,7 @@ header {
 .logo__small {
     position: fixed;
     left: 2.5rem;
-    top: 1.5rem;
+    top: .5rem;
 }
 
 .social__links {
@@ -171,5 +172,94 @@ header {
 @media (max-width: 992px) {
   .social__links {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  header {
+  position: relative;
+  z-index: 5;
+
+  .row {
+    margin: 0 !important;
+    .col {
+      position: fixed;
+      background: $black;
+      height: 45px;
+      z-index: 12;
+      top: 0;
+    }
+  }
+}
+
+
+  .burger-menu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    top: .5rem;
+    right: 4rem;
+  }
+  .burger {
+    position: absolute;
+    background: $wt;
+    width: 30%;
+    height: 2px;
+    top: 45%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+  }
+  .burger::before {
+    position: absolute;
+    background: $wt;
+    width: 35px;
+    height: 2px;
+    top: 5px;
+    content: "";
+    display: block;
+  }
+  .burger::after {
+    position: absolute;
+    background: $green;
+    width: 35px;
+    height: 2px;
+    bottom: 5px;
+    content: "";
+    display: block;
+  }
+  .burger::after, .burger::before, .burger {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+  .burger-menu.menu-on .burger::after{
+     transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+  }
+  .burger-menu.menu-on .burger::before{
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+    top: 0px;
+  }
+  .burger-menu.menu-on .burger{
+   background: rgba(111,111,111,.0);
+  }
+
+  .logo__small {
+      position: fixed;
+      left: 2.5rem;
+      top: 1rem;
+  }
+
+  .lang__btns {
+      position: fixed;
+      right: 8rem;
+      top: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
   }
 }
