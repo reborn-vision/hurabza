@@ -31,6 +31,7 @@ canvas {
     .container {
         position: relative;
         top: 100%;
+        z-index: 4;
     }
 }
 
@@ -197,7 +198,7 @@ section {
     }
 }
 
-.swiper-container-new {
+.swiper-container-new, .swiper-container-mob {
     overflow: hidden;
 }
 

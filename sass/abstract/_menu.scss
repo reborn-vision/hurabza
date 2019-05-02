@@ -1,6 +1,16 @@
 header {
   position: relative;
   z-index: 5;
+
+  .row {
+    margin: 0 !important;
+    .col {
+      position: fixed;
+      background: $black;
+      height: 9%;
+      z-index: 12;
+    }
+  }
 }
 
 .overlay {
@@ -10,7 +20,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #212529f7;
+    background: $black;
     z-index: 3;
 
     ul {

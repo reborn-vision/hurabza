@@ -212,6 +212,15 @@ header {
   position: relative;
   z-index: 5;
 }
+header .row {
+  margin: 0 !important;
+}
+header .row .col {
+  position: fixed;
+  background: #0d0e0f;
+  height: 9%;
+  z-index: 12;
+}
 
 .overlay {
   display: none;
@@ -220,7 +229,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: #212529f7;
+  background: #0d0e0f;
   z-index: 3;
 }
 .overlay ul {
@@ -399,6 +408,7 @@ canvas {
 .home .container {
   position: relative;
   top: 100%;
+  z-index: 4;
 }
 
 .home__about {
@@ -544,7 +554,7 @@ section {
   margin-top: 4rem;
 }
 
-.swiper-container-new {
+.swiper-container-new, .swiper-container-mob {
   overflow: hidden;
 }
 
@@ -843,6 +853,7 @@ section {
 .services_wrap .sub {
   font-size: 1.125rem;
   transition: 0.4s all;
+  text-align: center;
 }
 
 .services_item:hover .sub {
@@ -908,6 +919,13 @@ section {
   transform: translateX(-50%);
 }
 
+@media (max-width: 550px) {
+  .sub {
+    font-size: 2.125rem !important;
+    transition: 0.4s all;
+    text-align: center;
+  }
+}
 .services_wrap .heading {
   margin-bottom: 4%;
 }

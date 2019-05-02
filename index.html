@@ -212,34 +212,39 @@
     
 
     <header>
-        <div class="logo__small">
-            <a href="https://elegia.agency/circle/index.html">
-                <img src="media/logo-sm.svg" alt="">
-            </a>
-        </div>
-        <div class="menu__wrap">
-            <!-- Land and search btns -->
-            <ul class="list-unstyled lang__btns">
-                <li class="text-muted">
-                    <i class="fas fa-search"></i>
-                </li>
-                <li>
-                    <a href="#">EN</a>
-                </li>
+        <div class="row">
+            <div class="col">
+                <div class="logo__small">
+                    <a href="https://elegia.agency/circle/index.html">
+                        <img src="media/logo-sm.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu__wrap">
+                    <!-- Land and search btns -->
+                    <ul class="list-unstyled lang__btns">
+                        <li class="text-muted">
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li>
+                            <a href="#">EN</a>
+                        </li>
 
-                <li>
-                    <a href="#" class="active-btn">RU</a>
-                </li>
+                        <li>
+                            <a href="#" class="active-btn">RU</a>
+                        </li>
 
-                <li>
-                    <a href="#">العربية</a>
-                </li>
-            </ul>
-            <!-- End lang and search btns -->
-            <div class="burger-menu">
-                <div class="burger"></div>
+                        <li>
+                            <a href="#">العربية</a>
+                        </li>
+                    </ul>
+                    <!-- End lang and search btns -->
+                    <div class="burger-menu">
+                        <div class="burger"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        
 
 
         <div class="overlay">
@@ -562,7 +567,7 @@
             <div class="row swiper-mob">
                 <div class="col">
                     <!-- Swiper -->
-                      <div class="swiper-container">
+                      <div class="swiper-container-mob">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide swiper__item-mob-01">
                               <div class="industries_info">
@@ -621,7 +626,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more_sm">
+                    <a href="#" class="read_more">
 								Read more
 							</a>
                 </div>
@@ -633,7 +638,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more_sm">
+                    <a href="#" class="read_more">
 								Read more
 							</a>
                 </div>
@@ -645,7 +650,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <br>
-                    <a href="#" class="read_more_sm">
+                    <a href="#" class="read_more">
 								Read more
 							</a>
                 </div>
@@ -762,6 +767,15 @@
              navigation: {
                 nextEl: '.swiper-button-next-unique',
                 prevEl: '.swiper-button-prev-unique',
+            },
+            grabCursor: true,
+
+        });
+
+         var swiper = new Swiper('.swiper-container-mob', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
             },
             grabCursor: true,
 
