@@ -7,7 +7,7 @@ header {
     .col {
       position: fixed;
       background: $black;
-      height: 60px;
+      height: 50px;
       z-index: 12;
       top: 0;
     }
@@ -72,8 +72,8 @@ header {
   .burger {
     position: absolute;
     background: $wt;
-    width: 70%;
-    height: 2px;
+    width: 50%;
+    height: 1px;
     top: 20%;
     right: 0px;
     margin-top: -5px;
@@ -82,18 +82,18 @@ header {
   .burger::before {
     position: absolute;
     background: $wt;
-    width: 50px;
-    height: 2px;
-    top: 10px;
+    width: 40px;
+    height: 1px;
+    top: 6px;
     content: "";
     display: block;
   }
   .burger::after {
     position: absolute;
     background: $green;
-    width: 50px;
-    height: 2px;
-    bottom: 10px;
+    width: 40px;
+    height: 1px;
+    bottom: 6px;
     content: "";
     display: block;
   }
@@ -207,7 +207,7 @@ header {
     position: absolute;
     background: $wt;
     width: 30%;
-    height: 2px;
+    height: 1px;
     top: 45%;
     right: 0px;
     margin-top: -5px;
@@ -217,7 +217,7 @@ header {
     position: absolute;
     background: $wt;
     width: 35px;
-    height: 2px;
+    height: 1px;
     top: 5px;
     content: "";
     display: block;
@@ -226,7 +226,7 @@ header {
     position: absolute;
     background: $green;
     width: 35px;
-    height: 2px;
+    height: 1px;
     bottom: 5px;
     content: "";
     display: block;
